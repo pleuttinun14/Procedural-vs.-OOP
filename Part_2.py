@@ -9,7 +9,6 @@ class Store:
 
     def add_products(self, name, quantity):
         obj = Product(name, quantity)
-
         if obj.name in self.__products:
             self.__products[obj.name].quantity += obj.quantity
         else:
